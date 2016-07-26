@@ -1,6 +1,6 @@
 === Menu Social Icons ===
 Contributors: pdclark
-Plugin URI: https://github.com/pdclark/menu-social-icons
+Plugin URI: https://github.com/sassafrastech/menu-social-icons
 Author URI: http://pdclark.com
 Tags: social, icons, menus, FontAwesome, social media, easy
 Requires at least: 3.4
@@ -41,10 +41,9 @@ If you want to edit the appearance of the icons in ways that the options below d
 
 http://youtube.com/watch?v=hA2rjDwmvms
 
-**Option: Add Vimeo and Stack Exchange**
+**No IE7 Support**
 
-To use FontAwesome 4.0+, which drops support for **IE7**, but adds **vimeo.com** and **stackexchange.com**, add this to your theme's **functions.php** file:
-`add_filter( 'storm_social_icons_use_latest', '__return_true' );`
+The plugin now uses the latest Font Awesome by default, which does not support **IE7**.
 
 **Option: Show Text**
 
@@ -140,7 +139,7 @@ function storm_wp_nav_menu_objects( $sorted_menu_items, $args ){
     }
 
     return $sorted_menu_items;
-    
+
 }
 `
 
@@ -159,7 +158,7 @@ function storm_wp_nav_menu_objects( $sorted_menu_items, $args ){
 1. "normal" icon size
 1. "4x" icon size
 
-== Frequently Asked Questions == 
+== Frequently Asked Questions ==
 
 = Can you add X icon? =
 
@@ -180,6 +179,10 @@ Yes. The plugin installs the complete FontAwesome package. You can use any of th
 We load FontAwesome onto your site using NetDNA's [Bootstrap CDN](http://www.bootstrapcdn.com/#tab_fontawesome) service. This makes it load much faster for your users.
 
 == Changelog ==
+
+= v1.3.11 =
+
+* Fix icons not loading. Adapted from WordPress user [aliXharif's screenshots](https://wordpress.org/support/topic/icons-are-invisable#post-7885484).
 
 = 1.3.10 =
 
@@ -222,7 +225,7 @@ We load FontAwesome onto your site using NetDNA's [Bootstrap CDN](http://www.boo
 
 * New: Preview icons and shortcuts in the WordPress Menu Editor.
 * New: vimeo.com and stackexchange.com icons when FontAwesome 4.0 is turned on.
-* Notice: FontAwesome 4.0 removes support for IE7, so it is off by default. Use the filter `storm_social_icons_use_latest` shown in the readme to turn on FontAwesome 4.0. 
+* Notice: FontAwesome 4.0 removes support for IE7, so it is off by default. Use the filter `storm_social_icons_use_latest` shown in the readme to turn on FontAwesome 4.0.
 
 = 1.2 =
 
