@@ -1,0 +1,7 @@
+{
+  "name": "sassafras-tech/menu-social-icons",
+  "description": "Add social icons to your WordPress menu items automatically.",
+  "require": {
+    "php": ">=5.5"
+  }
+}
